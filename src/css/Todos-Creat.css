@@ -1,0 +1,34 @@
+.todo-creat {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    
+    label{
+        background-color: #ffff;
+        display: flex;
+        box-sizing: border-box;
+        border: 2px solid rgb(235, 235, 235);
+        height: 3.4rem;
+
+        input{
+            width: 32vw;
+            height: 3rem;
+            font-size: 1rem;
+            padding: 0 0 0 2%;
+            margin-left: 7%;
+            background-color: #ffff;
+            border: 0px;
+            color: #f1eded;
+        }
+        input:focus{
+            color: #000;
+        }
+        button{
+            height: 3rem;
+            width: 6vw;
+            border: 0px solid;
+            background-color: #ffff;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.todo-list{
+    background-color: #fff;
+    .visible{
+        background-color: #fff;
+        position: absolute;
+        top: 29%;
+        left: 31.5%;
+        margin: 5px 0 0 0;
+        padding: 0;
+        label{
+            background-color: #fff;
+        }
+        label svg{
+            background-color: #fff;
+            margin-left: 3px;
+            transform: rotate(-180deg);
+            transition: 200ms linear transform;
+        }
+        #icon{
+            display: none;
+        }
+        
+    }
+}
+
+
+&:has(input[name="icon"]:checked){
+    .todoss{
+        display: none;
+    }
+    label svg{
+        transform: rotate(0deg);
+    }
+}

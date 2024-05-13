@@ -1,0 +1,64 @@
+.todo{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffff;
+    padding-bottom: 1rem;
+    
+    .todo-text{
+        width: 93%;
+        background-color: #ffff;
+        flex-direction: row;
+        display: flex;
+
+        label{
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 3px solid #dcdfe6;
+            border-radius: 50%;
+            margin-top: 2px;
+
+            svg{
+                padding-top: 3px;
+                margin: 0;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                color: #dcdfe6;
+            }
+        }
+
+        .done{
+            display: none;
+        }
+        
+        .todo-content{
+            margin: 0 0 0 .4rem ;
+            width: 100%;
+            text-align: left;
+            background-color: #ffff;
+            border: 1px solid transparent;
+        }
+    }
+    .todo-remove{
+        width: 7%;
+        background-color: #ffff;
+        svg{
+            width: 80%;
+            height: 80%;
+            cursor: pointer;
+            background-color: #ffff;
+        }
+    }
+}
+
+&:has(input[name="done"]:checked){
+    .done-label{
+        border-color: green;
+    }
+    .ticked{
+        color: green;
+    }
+    .todo-content{
+        text-decoration: line-through;
+        color: gray;
+    }
+}

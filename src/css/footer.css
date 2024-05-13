@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 1rem;
+    background-color: #ffff;
+    color: gray;
+    p{
+        margin: 0;        
+        background-color: #ffff;
+        font-size: 1.2rem;
+    }
+    div button{        
+        background-color: #ffff;
+        border: 1px solid transparent;
+        cursor: pointer;
+        height: 1.5rem;
+        font-size: 1.2rem;
+        color: gray;
+    }
+    .clear-btn{
+        background-color: #ffff;
+        height: 1.5rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: gray;
+    }
+}
+div button:hover, .clear-btn:hover{
+    border: 1px solid black;
+}
