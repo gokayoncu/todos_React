@@ -21,6 +21,7 @@ function TodoList({todos,onremoveTodos,updateTodos,handleUpdateInoutContent,hand
               handleUpdateInoutChange={handleUpdateInoutChange}
               handleUpdateInoutBlur={handleUpdateInoutBlur}
               completedCheckbox={completedCheckbox}
+              
               />
             ))
           }

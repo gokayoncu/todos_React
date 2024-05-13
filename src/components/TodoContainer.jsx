@@ -23,7 +23,6 @@ function TodoContainer() {
       ...updateTodos,
       content: e.target.value,
     })
-    console.log(e)
   }
   const handleUpdateInoutBlur = ()=>{
     const id= updateTodos.id;
@@ -38,11 +37,11 @@ function TodoContainer() {
     })
   )}
 
-  const completedCheckbox = (e) =>{
-    const id = parseInt(e.target.value);
+  const completedCheckbox = (todo) =>{
+    const id = parseInt(todo.id);
     setTodos(
       todos.map((todo) =>
-        todo.id === id ? { ...todo, completed: !todo.content } : todo
+        todo.id === id ? { ...todo, completed: !todo.completed } : todo
       ),
     )
   }
@@ -59,6 +58,7 @@ function TodoContainer() {
     console.log(todos) 
   }
   
+  console.log(todos)
 
   return (
     <div className='todo-container'>
